@@ -1,13 +1,22 @@
-# codenoise
+# Codenoise
 
-A Clojure library designed to ... well, that part is up to you.
+Turn overloaded function arities into beautiful music.
 
 ## Usage
 
-FIXME
+Compile codenoise.core
+
+```clojure
+(in-ns 'codenoise.core)
+```
+
+Pick your function to transcribe into angelic sounds.
+
+```clojure
+(map #(beep :duration % :frequency (* 200 %))
+  (:arities (function-attributes 'codenoise.core 'bar)))
+```
 
 ## License
-
-Copyright © 2012 FIXME
 
 Distributed under the Eclipse Public License, the same as Clojure.
